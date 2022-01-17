@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "448270134854",
+    "project_id": "dusuncepaylasmafirebase",
+    "storage_bucket": "dusuncepaylasmafirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448270134854:android:9d92e5a9b9c1c38abfa447",
+        "android_client_info": {
+          "package_name": "com.okuuyghur.dusuncepaylasmafirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448270134854-a9sqti4m8u7aa1n9n0bae54qufppqugo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXCchi-uUFdvqYbTx-M4HEH5K7--_7rWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448270134854-a9sqti4m8u7aa1n9n0bae54qufppqugo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

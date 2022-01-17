@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/kullaniciAdi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="KullaniciAdki"
+        android:layout_margin="5dp"
+        android:textColor="#0C5BFA"
+        />
+    <TextView
+        android:id="@+id/paylasim_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="paylasilanYorumlar"
+        android:layout_margin="5sp"
+        android:textSize="18dp"
+        android:textColor="#30589E"
+
+        />
+
+</LinearLayout>
