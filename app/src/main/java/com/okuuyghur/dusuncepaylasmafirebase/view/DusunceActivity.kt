@@ -1,6 +1,6 @@
 package com.okuuyghur.dusuncepaylasmafirebase.view
 
-import android.app.DownloadManager
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.core.Query
+import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import com.okuuyghur.dusuncepaylasmafirebase.R
@@ -59,7 +59,8 @@ class DusunceActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
     fun firebaseVerial(){
-        db.collection("Paylasimlar").orderBy("tarih",Query.).addSnapshotListener { snapshot, error ->
+        db.collection("Paylasimlar").orderBy("tarih",
+            Query.Direction.DESCENDING).addSnapshotListener { snapshot, error ->
             if (error != null){
                 Toast.makeText(this,error.localizedMessage,Toast.LENGTH_LONG).show()
             } else{
@@ -72,7 +73,8 @@ class DusunceActivity : AppCompatActivity() {
                         for ( document in documents){
                             val kullaniciAdi = document.get("kullaniciAdi") as String
                             val paylasilanYorum = document.get("paylasilanYorumlar") as String
-                            val gorselurl = document.get("gorselURL") as String?
+                            val gorselurl = document.get("gorselUrl") as String?
+
 
                             val indirilenPaylasim = Paylasim(kullaniciAdi,paylasilanYorum,gorselurl)
                             paylasimlistesi.add(indirilenPaylasim)
